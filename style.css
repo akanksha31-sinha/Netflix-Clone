@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Momo+Trust+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'popins',sans-serif;
+}
+     .main {
+    background-image: url("./agents/img/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: max(1200px,100vw);   /* makes image fit area */ /* centers image */
+    position:relative;
+    
+}
+body{
+    background-color:black;
+}
+.main .box{
+    height:70vh;
+    width:100%;
+    opacity:0.69;
+    background-color:black;
+    position: absolute;
+    top:0;
+    left:0;
+}
+ nav{
+    max-width:75vw;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:62px;
+ }
+ nav img{
+    width: 114px;
+    position:relative;
+    z-index:10;
+ }
+ nav button{
+    position:relative;
+    z-index:10;
+ }
+ .hero{
+    font-family: 'Martel sans' sans-sarif;
+    height:calc(100%-63px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color: white;
+    position: relative;
+    gap:22px;
+    padding: 0 23px;
+    margin-top: 120px;
+ }
+ .hero> :nth-child(1){
+   font-family:'Poppins', sans-serif;
+   font-weight:bolder;
+    font-weight:bolder;
+    font-size:48px;
+     text-align:center;
+ }
+ .hero> :nth-child(2){
+    font-weight:700;
+    font-size:24px;
+     text-align:center;
+ }
+ .hero> :nth-child(3){
+    font-weight:400;
+    font-size:20px;
+    text-align:center;
+ }
+ .separation{
+    height:7px;
+    background-color:rgb(129, 126, 126);
+ }
+ .btn{
+  padding:8px 15px;
+  font-weight:bold;
+  color:white;
+  background-color: rgba(52, 50, 50, 0.7);
+  border-radius:4px;
+  border:1px solid white;
+  cursor: pointer;
+ }
+ .btn-red{
+   background-color:red;
+   color:white;
+   padding:8px,15px;
+   font-size:20px;
+   border-radius:4px;
+
+ }
+ .btn-red-sm{
+   background-color:red;
+   color:white;
+ }
+ .hero-buttons{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:16px;
+ }
+ .main input{
+   padding:8px 101px 10px 14px;
+   color:white;
+   font-weight:900;
+   font-size:12px;
+   border-radius:4px;
+   background-color: rgba(23,23,23,0.7); 
+   border: 1px solid  rgba(173, 170, 170, 0.7); 
+ }
+ .first{
+   display:flex;
+   justify-content:center;
+   max-width:70vw;
+   margin:auto;
+   align-items:center;
+ }
+ .secImg img{
+   width:30vw;
+   position:relative;
+   z-index:10;
+ }
+
+ .trending {
+  padding: 40px 60px;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:white;
+}
+
+/* Container for movie cards */
+.trending-container{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  overflow-x: auto;  
+  /*scroll-behaviour:smooth;*/
+}/* allows horizontal scrolling */
+  
+  
+  
+/* Movie Card */
+.card {
+  position: relative;
+  flex: 0 0 auto;  /* prevent shrinking */
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+/* Poster */
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Number overlay */
+.rank {
+  position: absolute;
+  top: 70%;
+  left: -20px;
+  bottom:10px;
+  transform: translateY(-50%);
+  font-size: 5rem;
+   font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-family: 'Arial Black', sans-serif;
+  border: black;
+}
+
+
+.reasons{
+  padding: 80px;
+  background-color:black;
+  color:white;
+}
+.reasons h3 {
+  font-size: 2rem;
+  margin-bottom:25px;
+  color:white;
+  text-align:left
+  font-weight:800;
+}
+.reasons-container{
+  display:flex;
+  gap:25px;
+  overflow:auto;
+  align-items:flex-start;
+  scroll-behavior: smooth;
+  margin-bottom: 16px;
+}
+
+/* Scrollbar Style */
+.reasons-container::-webkit-scrollbar {
+  height: 8px;
+}
+.reasons-container::-webkit-scrollbar-thumb {
+  background: rgba(243, 200, 200, 0.4);
+  border-radius: 10px;
+}
+
+/* Card Style */
+.reason-card {
+  flex: 0 0 200px;
+  background: linear-gradient(145deg, #ccccd4, #0e049b);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(73, 117, 220, 0.4);
+  transition: transform 0.3s ease;
+  position: relative;
+  min-height:250px;
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+}
+
+/* Heading */
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.reason-card {
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+ /*Icon 
+.reason-card img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.9;
+}
+  */
+ .faq{
+  background-color:black;
+  color:white;
+  font-size:30px;
+ }
+  .faqbox{
+    display:flex;
+    background-coloR: #2d2d2d;
+    padding:34px;
+    max-width:40vw;
+    margin:34px auto;
+    justify-content:space-between;
+
+
+  }
+  .faqbox:hover{
+    background-color:rgb(83, 77, 77)
+
+  }
+  .faq h2{
+    text-align:center;
+    padding:34px;
+    font-size:48px;
+  }
+  
+
+
+
+ 
+ 
